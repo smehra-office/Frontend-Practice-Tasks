@@ -1,4 +1,3 @@
-import React from "react";
 
 const input = {
     taxi: "a car licensed to transport passengers in return for payment of a fare",
@@ -13,7 +12,7 @@ const input = {
     },
 }
 
-const App = () => {
+const ParseObjectToText = () => {
     const displayContent = parseObject(input);
     return (<div dangerouslySetInnerHTML={{ __html: displayContent }}></div>)
 };
@@ -31,4 +30,4 @@ const parseObject = obj => {
     return result;
 };
 
-export default App;
+export default ParseObjectToText;
